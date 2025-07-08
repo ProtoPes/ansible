@@ -1,0 +1,23 @@
+# This is an example of `~/.ssh/conifg` file
+#
+# Each Host line should be in format:
+# Host [hostname] # distro=[distroname] tags=[comma,separated,tags]
+# distro is mandatory, tags are optional
+
+# This are dummy values here
+Host webserver-1 # distro=alpine tags=deploy,webservers
+	Hostname example.com
+	User example
+
+Host webserver-2 # distro=debian tags=staging,webservers
+	Hostname test.example.com
+	User example2
+
+Host db-1 # distro=ubuntu tags=db,staging
+	Hostname superdatabase.com
+	User example3
+	Port 34281
+
+Host db-2 # distro=fedora tags=db,deploy
+  Hostname 1.2.3.4
+  User example4
