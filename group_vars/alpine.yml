@@ -1,0 +1,4 @@
+---
+ansible_become_method: doas
+elevated_group: wheel
+ssh_service_name: sshd
